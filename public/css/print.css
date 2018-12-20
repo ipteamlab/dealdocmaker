@@ -1,0 +1,156 @@
+/**
+ * Example Print Preview site
+ *
+ *	print.css
+ *	author: Tim Connell
+ */
+
+/* -- Hide screen specific elements -- */
+#nav,
+#footer .footer-links,
+#feature a.prev,
+#feature a.next,
+a.print-preview, aside {
+    display: none;
+}
+
+.variant {
+	color: black
+}
+
+/* -- Typography -- */
+body {
+    background: #FFF;
+    color: #000;
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.2;
+    width: 21cm;
+}
+
+span{
+	font-family: "Times New Roman", Times, serif;
+}
+
+
+.line{
+	height: 0.03cm;
+	background: black;
+	position: relative;
+    float:top;
+    
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+  }
+
+  .colontitultop{
+    position: relative;
+    padding-top: 0.1cm;
+	height: 3cm;
+	width: 21cm;
+	background: #FFFFFF;
+}
+
+.head1 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 11pt;	
+}
+
+p {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 11pt;
+	margin-right: 1cm;
+	margin-left: 2cm;
+	text-align: justify;
+	line-height: 1.15
+  }
+
+
+
+.textofdock {
+	height: 29.7cm;
+	width: 21cm;
+	margin: auto;
+	background: #FFFFFF;
+}
+
+  .image{
+	float:left;
+	height: 0.8cm;
+	widows: 2.19cm;
+	margin-top: 0.6cm;
+	margin-left: 2cm;
+}
+
+
+
+h1 { font-size: 2em; margin: 2em 0 0.25em; }
+h2 { font-size:1.7em; }
+h3 { font-size:1.5em; }
+h4 { font-size:1.2em; }
+h5 { font-size:1em; }
+
+
+/* -- Style site heading -- */
+#header strong {
+    color: #000;
+    display: block;
+    font-weight: normal;
+    font-size: 3em;
+    margin: 0 0 1em;
+    padding: 0;
+    text-shadow: rgba(0, 0, 0, 0.44) 1px 1px 2px;
+}
+    
+
+/* -- Add message re print -- */
+#content:before {
+    content: "Thank you for printing this page. Do come back to foo.tld, we are constantly adding new and interesting articles and tutorials. Note: To help the environment we have automatically removed navigaton and other unessessary elements from the page.";
+    display: block;
+    border: 1px solid #ccc;
+    font-style: italic;
+    margin: 0 0 1em;
+    padding: 8px 10px;
+}
+
+a:link:after,
+a:visited:after {
+  content: " (" attr(href) ") ";
+  font-size: 80%;
+  text-decoration: none;
+}
+
+
+/* -- Accommodate JS driven elements --*/
+#feature > div {
+    border: none;
+    overflow: visible;
+    height: auto;
+}
+
+    #feature div.items {
+        left: auto !important;
+        position: relative;
+        overflow: visible;
+        width: auto;
+    }
+
+    #feature div.items div {
+        float: none;
+        margin: 20px 0;
+        position: relative;
+    }
+
+/* -- Photo galleries -- */
+div.gallery {
+    margin: 1em 0;    
+    overflow: hidden;
+}
+
+    div.gallery div.items div {
+        float: left;
+        margin-right: 10px;
+    }
+    

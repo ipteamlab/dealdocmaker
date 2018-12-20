@@ -1,0 +1,96 @@
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+  }
+
+
+span{
+	font-family: "Times New Roman", Times, serif;
+}
+.variant {
+	
+	background: yellow;
+}
+
+
+.line{
+	height: 0.03cm;
+	background: black;
+	position: relative;
+	float:top;
+  
+}
+
+.image{
+	float:left;
+	height: 0.8cm;
+	widows: 2.19cm;
+	margin-left: 2cm;
+	margin-top: 0.6cm;
+}
+
+.colontitultop{
+	position: relative;
+	padding-top: 0.1cm;
+	height: 3cm;
+	width: 21cm;
+	background: #FFFFFF;
+}
+
+.head1 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 11pt;	
+}
+
+p {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 11pt;
+	margin-right: 1cm;
+	margin-left: 2cm;
+	text-align: justify;
+	line-height: 1.15
+  }
+
+.content {
+    width: 75%;
+    background: #D3D3D3;
+    float: right;
+}
+
+.textofdock {
+
+	height: 29.7cm;
+	width: 21cm;
+	margin: auto;
+	background: #FFFFFF;
+}
+
+#cut {
+	height: 0.5cm;
+	
+	margin: auto;
+	background: #D3D3D3;
+}
+
+.w3-sidebar {
+	padding-top: 20px;
+  	padding-right: 10px;
+  	padding-left: 10px;
+	box-sizing: border-box;
+	padding-top: 18px; /* 2.5vh; */
+	width: 25%; /* 10% */
+	float: left;
+	border-left: 1px solid #3C4351;
+	height: 100%; /* 94.5vh; */
+	background: #2B303A; /*#EEE; */ /* Light theme */
+	overflow-y: auto;
+}
+
+input[type="text"] {
+	width: 100%;
+	display: block;
+  }
+
+
+
+

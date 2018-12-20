@@ -1,0 +1,16 @@
+{
+  "name": "dealdock",
+  "version": "1.0.0",
+  "description": "Building Deal Dock",
+  "main": "app.js",
+  "scripts": {
+    "start": "app.js"
+  },
+  "author": "Sergey Lozovik",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2"
+  }
+}

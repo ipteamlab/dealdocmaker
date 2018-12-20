@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>DealDoc Maker</title>
+	<!-- Resources -->
+	<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" media="screen"/>
+	<link href="css/print.css" rel="stylesheet" media="print" />
+
+</head>
+
+<body>
+	<div id="contract" class="content">
+		<br>
+		<div class="textofdock">
+		</div>
+		<br>
+	</div>
+
+	<aside class="w3-sidebar" style="width:25%">
+		<form id="getcontract" method="POST" autocomplete = "off">
+			<div>
+				<input id="printbtn" type="button" value="Get PDF Document" class="w3-button w3-grey" style="float: right; width: 100%; margin-bottom: 20px;">
+			</div>
+
+			<input name="numdeal" id="numdeal" class="w3-input w3-border w3-round" type="text" placeholder="Номер договора"
+			 ><br>
+			<input name="datadeal" id="datadeal" class="w3-input w3-border w3-round" type="text" placeholder="Дата договора"
+			 ><br>
+			<input name="nameoffirm" id="nameoffirm" class="w3-input w3-border w3-round" type="text" placeholder="Полное наименование организации"><br>
+			<input name="shortnameoffirm" id="shortnameoffirm" class="w3-input w3-border w3-round" type="text" placeholder="Краткое наименование организации"><br>
+			<input name="namehead" id="namehead" class="w3-input w3-border w3-round" type="text" placeholder="ФИО руководителя"><br>
+			<input name="position_manager" id="position_manager" class="w3-input w3-border w3-round" type="text" placeholder="Должность руководителя"><br>
+			<input name="based_on_what" id="based_on_what" class="w3-input w3-border w3-round" type="text" placeholder="на основе чего?"><br>
+			<input name="contract_date" id="contract_date" class="w3-input w3-border w3-round" type="text" placeholder="Дата действия договора"><br>
+			<input name="INN" id="INN" class="w3-input w3-border w3-round" type="text" placeholder="ИНН"><br>
+			<input name="KPP" id="KPP" class="w3-input w3-border w3-round" type="text" placeholder="КПП"><br>
+			<input name="legal_address" id="legal_address" class="w3-input w3-border w3-round" type="text" placeholder="Юр.адрес"><br>
+			<input name="mailing_address" id="mailing_address" class="w3-input w3-border w3-round" type="text" placeholder="Почтовый адрес"><br>
+			<input name="phone" id="phone" class="w3-input w3-border w3-round" type="text" placeholder="Телефон"><br>
+			<input name="email" id="email" class="w3-input w3-border w3-round" type="text" placeholder="Email"><br>
+			<input name="banker" id="banker" class="w3-input w3-border w3-round" type="text" placeholder="Банк"><br>
+			<input name="P_C" id="P_C" class="w3-input w3-border w3-round" type="text" placeholder="Р/С"><br>
+			<input name="K_P" id="K_P" class="w3-input w3-border w3-round" type="text" placeholder="К/C"><br>
+			<input name="BIK" id="BIK" class="w3-input w3-border w3-round" type="text" placeholder="БИК"><br>
+			<input name="specification" id="specification" class="w3-input w3-border w3-round" type="text" placeholder="СПЕЦИФИКАЦИЯ"><br>
+			<input name="payment_date" id="payment_date" class="w3-input w3-border w3-round" type="text" placeholder="Оплата до какого числа"><br>
+		</form>
+	</aside>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="js/dealdocks.js"></script>
+</body>
+
+</html>
