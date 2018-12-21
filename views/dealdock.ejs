@@ -194,7 +194,7 @@
 	<p></p>
 	<div style="padding-right: 1cm; padding-left: 2cm;">
 
-		<table style="width:100%">
+		<table class="recvizit" style="width:100%">
 			<tr>
 				<td style="width:55%">
 					<p class="texttable" style="margin-left: 0.1cm; margin-right: 0.1cm; text-align: left; line-height: 1.3; font-size: 9pt;">
@@ -210,8 +210,6 @@
 						к/с: 30101810300000000202 <br>
 						БИК: 044525202 <br>
 					</p>
-
-
 				</td>
 				<td>
 					<p class="texttable" style="margin-left: 0.1cm; margin-right: 0.1cm; text-align: left; line-height: 1.3; font-size: 9pt;">
@@ -246,8 +244,8 @@
 					<p class="texttable" style="margin-left: 0.1cm; margin-right: 0.1cm; margin-top: 0.05cm;  text-align: left; line-height: 1.3; font-size: 10pt;">
 						<b>Подписи Сторон<br>cо стороны СУБЛИЦЕНЗИАТА:<br></b><br>
 						<br><br>
-						Генеральный директор<br>
-						Гурьков С.В.<br>
+						<span class="variant"><%= position_manager %></span><br>
+						<span class="variant"><%= namehead %></span><br>
 						<br>
 						<br><br>
 						________________________ <br>
@@ -271,66 +269,82 @@
 			
 		<div class="line"></div>
 	</div>
-
-	<center><span class="head1">4. СРОК ДЕЙСТВИЯ ДОГОВОРА И ПОРЯДОК ЕГО РАСТОРЖЕНИЯ</span></center>
-	<p>
-		4.1.Договор считается заключенным с <span class="variant"><%= datadeal %></span> <span class="variant"><%= contract_date %></span>.
+	<p style="text-align: right;  line-height: 1.15; font-size: 10pt;">
+		Приложение №1<br>
+		к Сублицензионному договору  <br>
+		<span class="variant"><%= numdeal %></span> </span> от <span class="variant"><%= datadeal %></span> 
 	</p>
+	<center><span class="head1">СПЕЦИФИКАЦИЯ</span></center>
 	<p>
-		4.2.В случае нарушения СУБЛИЦЕНЗИАТОМ условий раздела 2 Договора, ЛИЦЕНЗИАТ вправе расторгнуть Договор в
-		одностороннем порядке, направив СУБЛИЦЕНЗИАТУ соответствующее уведомление с указанием даты окончания действия
-		Договора. В этом случае, СУБЛИЦЕНЗИАТ обязан незамедлительно возвратить ЛИЦЕНЗИАТУ технические средства защиты
-		авторских прав и деинсталлировать ПК.
-	</p>
-	<center><span class="head1">5. РАЗРЕШЕНИЕ СПОРОВ</span></center>
-	<p>
-		5.1. Все споры, возникающие из настоящего Договора или связанные с ним, решаются путем переговоров между Сторонами.
-	</p>
-	<p>
-		5.2. Споры, которые СТОРОНЫ не смогут разрешить путем переговоров, подлежат передаче на рассмотрение в Арбитражный
-		суд г. Москвы.
-	</p>
-	<center><span class="head1">6. АДРЕСА И БАНКОВСКИЕ РЕКВИЗИТЫ СТОРОН</span></center>
+		
 	<p></p>
 	<div style="padding-right: 1cm; padding-left: 2cm;">
 
-		<table style="width:100%">
-			<tr>
-				<td style="width:55%">
-					<p class="texttable" style="margin-left: 0.1cm; margin-right: 0.1cm; text-align: left; line-height: 1.3; font-size: 9pt;">
-						<b>ЛИЦЕНЗИАТ: ООО «МИДАС» </b><br>
-						ИНН: 7736664814 <br>
-						КПП: 772501001 <br>
-						Юридический адрес: 115280, г. Москва, ул. Ленинская слобода, д. 19, комната 9р. <br>
-						Фактический адрес: 115280, г. Москва, ул. Ленинская слобода д. 19, БЦ «ОМЕГА ПЛАЗА», офис 606 <br>
-						Тел: +7-495-269-0257 <br>
-						Эл. почта: rusupport@midasit.com <br>
-						Банк: АО КБ СИТИБАНК <br>
-						р/с: 40702810700302199001 <br>
-						к/с: 30101810300000000202 <br>
-						БИК: 044525202 <br>
-					</p>
-
+		<table class="specification" style="width:100%; font-size: 10pt;">
+			<tr style="border-top: 0.7mm solid black; border-bottom: 0.7mm solid black;">
+				<th style="width:55%">Наименование программы</th>
+				<th style="width:10%">Кол-во, шт.</th> 
+				<th style="width:14%">Стоимость, рубли</th>
+				<th style="width:21%">Общая стоимость, рубли</th>
+			  </tr>
+			  <tr>
+				<td>midas Civil Plus (базовая версия)</td>
+				<td style="text-align: center">1</td>
+				<td style="text-align: center">378 000.00</td>
+				<td style="text-align: center">378 000.00</td>
+			  </tr>
+			  <tr>
+				<td>
+					<p class="texttable" style="margin-left: 0.1cm; margin-right: 0.1cm; text-align: left; line-height: 1.3; font-size: 10pt;">
+						- Модуль проверки сечений ЖБ и ПНЖБ (СНиП 2.05.03-84  и СП 35. 13330. 2011) <br>
+						- Модуль проверки стальных и композитных сечений (СНиП 2.05.03-84 и СП 35. 13330. 2011) <br>
+						- Модуль SoilWorks <br><br>
+	
+						* срок всех опций: до 14 декабря 2019 г. 
+					</p> 
 
 				</td>
-				<td>
-					<p class="texttable" style="margin-left: 0.1cm; margin-right: 0.1cm; text-align: left; line-height: 1.3; font-size: 9pt;">
-						<b>СУБЛИЦЕНЗИАТ: <span class="variant"><%= shortnameoffirm %></span></b><br>
-						ИНН <span class="variant"><%= INN %></span><br>
-						КПП <span class="variant"><%= KPP %></span><br>
-						Юридический адрес: <span class="variant"><%= legal_address %></span><br>
-						Почтовый адрес: <span class="variant"><%= mailing_address %></span><br>
-						Тел: <span class="variant"><%= phone %></span><br>
-						Эл. почта. <span class="variant"><%= email %></span><br>
-						Банк: <span class="variant"><%= banker %></span><br>
-						р/с: <span class="variant"><%= P_C %></span><br>
-						к/с: <span class="variant"><%= K_P %></span><br>
-						БИК: <span class="variant"><%= BIK %></span><br>
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td>
+				<td style="text-align: center">1</td>
+				<td style="text-align: center">162 000.00</td>
+				<td style="text-align: center">162 000.00</td>
+			  </tr>
+			  <tr>
+				<td><b>НДС</b></td>
+				<td></td>
+				<td style="text-align: center">0.00</td>
+				<td style="text-align: center">0.00</td>
+			  </tr>
+			  <tr style="border-bottom: 0.7mm solid black;">
+				<td> <b>ИТОГО</b> </td>
+				<td></td>
+				<td></td>
+				<td style="text-align: center"> <b>540 000.00</b> </td>
+			  </tr>
+		</table>
+
+	</div>
+	<br>
+	<p style="font-size: 10pt;">
+			СТОРОНЫ договорились о том, что стоимость прав (неисключительных лицензий) на ИСПОЛЬЗОВАНИЕ ПК, предоставляемых ЛИЦЕНЗИАТОМ СУБЛИЦЕНЗИАТУ по ДОГОВОРУ, составляет 540 000.00 рублей. 
+	</p>
+
+	<p style="font-size: 10pt;">
+			НДС не облагается на основании ПП.26 П.2 СТ.149 НАЛОГОВОГО КОДЕКСА РОССИЙСКОЙ ФЕДЕРАЦИИ.
+	</p>
+	<p style="font-size: 10pt;">
+			СУБЛИЦЕНЗИАТ обязуется перечислить сумму вознаграждения на расчетный счет ЛИЦЕНЗИАТА, по реквизитам, указанным ЛИЦЕНЗИАТОМ в счете на оплату 540 000.00 российских рублей до 14 декабря 2018 г.
+	</p>
+	
+	<p style="font-size: 10pt;">
+			Настоящее приложение составлено в 2 экземплярах по одному для каждой СТОРОНЫ. 
+	</p>
+	<p></p>
+	<div style="padding-right: 1cm; padding-left: 2cm;">
+
+		<table class="signature" style="border-collapse: collapse; border: none;">
+			
+			<tr style="border-collapse: collapse; border: none;">
+				<td style="border-collapse: collapse; border: none;">
 					<p class="texttable" style="margin-left: 0.1cm; margin-right: 0.1cm; margin-top: 0.05cm;  text-align: left; line-height: 1.3; font-size: 10pt;">
 						<b>Подписи Сторон<br>со стороны ЛИЦЕНЗИАТА:<br></b><br>
 						<br><br>
@@ -342,12 +356,12 @@
 						Подпись<br>
 					</p>
 				</td>
-				<td>
+				<td style="border-collapse: collapse; border: none;">
 					<p class="texttable" style="margin-left: 0.1cm; margin-right: 0.1cm; margin-top: 0.05cm;  text-align: left; line-height: 1.3; font-size: 10pt;">
 						<b>Подписи Сторон<br>cо стороны СУБЛИЦЕНЗИАТА:<br></b><br>
 						<br><br>
-						Генеральный директор<br>
-						Гурьков С.В.<br>
+						<span class="variant"><%= position_manager %></span><br>
+						<span class="variant"><%= namehead %></span><br>
 						<br>
 						<br><br>
 						________________________ <br>
@@ -357,6 +371,7 @@
 			</tr>
 		</table>
 	</div>
+	
 </div>
 <div id="cut"></div>
 

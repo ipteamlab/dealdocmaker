@@ -1,7 +1,10 @@
 table, th, td {
 	border: 1px solid black;
 	border-collapse: collapse;
+	font-family: "Times New Roman", Times, serif;
+	padding: 1.5mm;
   }
+  
 
 
 span{
