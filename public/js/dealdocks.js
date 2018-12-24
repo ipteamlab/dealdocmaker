@@ -22,7 +22,9 @@ $(function () {
             BIK: $('#BIK').val()==undefined ? "" : $('#BIK').val(),
             mainprod: $('#mainprod').val()==undefined ? "" : $('#mainprod').val(),
             mainnum: $('#mainnum').val()==undefined ? "" : $('#mainnum').val(),
-            mainprise: $('#mainprise').val()==undefined ? "" : $('#mainprise').val(),
+            mainprise: $('#mainprise').val()==undefined ? "" : moneyFormat($('#mainprise').val()),
+            summainprise: moneyFormat($('#mainprise').val()*$('#mainnum').val()),
+
             module1: $('#module1').val()==undefined ? "" : $('#module1').val(),
             module2: $('#module2').val()==undefined ? "" : $('#module2').val(),
             module3: $('#module3').val()==undefined ? "" : $('#module3').val(),
@@ -30,8 +32,10 @@ $(function () {
             module5: $('#module5').val()==undefined ? "" : $('#module5').val(),
             module6: $('#module6').val()==undefined ? "" : $('#module6').val(),
             modulnum: $('#modulnum').val()==undefined ? "" : $('#modulnum').val(),
-            moduleprise: $('#moduleprise').val()==undefined ? "" : $('#moduleprise').val(),
+            moduleprise: $('#moduleprise').val()==undefined ? "" : moneyFormat($('#moduleprise').val()),
+            summoduleprise: moneyFormat($('#moduleprise').val()*$('#modulnum').val()),
 
+            itogo: moneyFormat($('#moduleprise').val()*$('#modulnum').val()+$('#mainprise').val()*$('#mainnum').val()),
 
             payment_date: $('#payment_date').val()==undefined ? "" : $('#payment_date').val(),
             term_options: $('#term_options').val()==undefined ? "" : $('#term_options').val()
@@ -61,7 +65,8 @@ $(function () {
             BIK: $('#BIK').val()==undefined ? "" : $('#BIK').val(),
             mainprod: $('#mainprod').val()==undefined ? "" : $('#mainprod').val(),
             mainnum: $('#mainnum').val()==undefined ? "" : $('#mainnum').val(),
-            mainprise: $('#mainprise').val()==undefined ? "" : $('#mainprise').val(),
+            mainprise: $('#mainprise').val()==undefined ? "" : moneyFormat($('#mainprise').val()),
+            summainprise: moneyFormat($('#mainprise').val()*$('#mainnum').val()),
             module1: $('#module1').val()==undefined ? "" : $('#module1').val(),
             module2: $('#module2').val()==undefined ? "" : $('#module2').val(),
             module3: $('#module3').val()==undefined ? "" : $('#module3').val(),
@@ -69,9 +74,11 @@ $(function () {
             module5: $('#module5').val()==undefined ? "" : $('#module5').val(),
             module6: $('#module6').val()==undefined ? "" : $('#module6').val(),
             modulnum: $('#modulnum').val()==undefined ? "" : $('#modulnum').val(),
-            moduleprise: $('#moduleprise').val()==undefined ? "" : $('#moduleprise').val(),
+            moduleprise: $('#moduleprise').val()==undefined ? "" : moneyFormat($('#moduleprise').val()),
+            summoduleprise: moneyFormat($('#moduleprise').val()*$('#modulnum').val()),
 
-
+            itogo: moneyFormat($('#moduleprise').val()*$('#modulnum').val()+$('#mainprise').val()*$('#mainnum').val()),
+            
             payment_date: $('#payment_date').val()==undefined ? "" : $('#payment_date').val(),
             term_options: $('#term_options').val()==undefined ? "" : $('#term_options').val()
         }, updateContrac);
@@ -84,5 +91,10 @@ $(function () {
     $('#printbtn').click(function() {
         window.print();
     })
+
+    function moneyFormat(n) {
+        return parseFloat(n).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1 ").replace('.', '.');
+    }
+    
 
 });
