@@ -20,8 +20,21 @@ $(function () {
             P_C: $('#P_C').val()==undefined ? "" : $('#P_C').val(),
             K_P: $('#K_P').val()==undefined ? "" : $('#K_P').val(),
             BIK: $('#BIK').val()==undefined ? "" : $('#BIK').val(),
-            specification: $('#specification').val()==undefined ? "" : $('#specification').val(),
-            payment_date: $('#payment_date').val()==undefined ? "" : $('#payment_date').val()
+            mainprod: $('#mainprod').val()==undefined ? "" : $('#mainprod').val(),
+            mainnum: $('#mainnum').val()==undefined ? "" : $('#mainnum').val(),
+            mainprise: $('#mainprise').val()==undefined ? "" : $('#mainprise').val(),
+            module1: $('#module1').val()==undefined ? "" : $('#module1').val(),
+            module2: $('#module2').val()==undefined ? "" : $('#module2').val(),
+            module3: $('#module3').val()==undefined ? "" : $('#module3').val(),
+            module4: $('#module4').val()==undefined ? "" : $('#module4').val(),
+            module5: $('#module5').val()==undefined ? "" : $('#module5').val(),
+            module6: $('#module6').val()==undefined ? "" : $('#module6').val(),
+            modulnum: $('#modulnum').val()==undefined ? "" : $('#modulnum').val(),
+            moduleprise: $('#moduleprise').val()==undefined ? "" : $('#moduleprise').val(),
+
+
+            payment_date: $('#payment_date').val()==undefined ? "" : $('#payment_date').val(),
+            term_options: $('#term_options').val()==undefined ? "" : $('#term_options').val()
         }, updateContrac);
     });
 
@@ -46,8 +59,21 @@ $(function () {
             P_C: $('#P_C').val()==undefined ? "" : $('#P_C').val(),
             K_P: $('#K_P').val()==undefined ? "" : $('#K_P').val(),
             BIK: $('#BIK').val()==undefined ? "" : $('#BIK').val(),
-            specification: $('#specification').val()==undefined ? "" : $('#specification').val(),
-            payment_date: $('#payment_date').val()==undefined ? "" : $('#payment_date').val()
+            mainprod: $('#mainprod').val()==undefined ? "" : $('#mainprod').val(),
+            mainnum: $('#mainnum').val()==undefined ? "" : $('#mainnum').val(),
+            mainprise: $('#mainprise').val()==undefined ? "" : $('#mainprise').val(),
+            module1: $('#module1').val()==undefined ? "" : $('#module1').val(),
+            module2: $('#module2').val()==undefined ? "" : $('#module2').val(),
+            module3: $('#module3').val()==undefined ? "" : $('#module3').val(),
+            module4: $('#module4').val()==undefined ? "" : $('#module4').val(),
+            module5: $('#module5').val()==undefined ? "" : $('#module5').val(),
+            module6: $('#module6').val()==undefined ? "" : $('#module6').val(),
+            modulnum: $('#modulnum').val()==undefined ? "" : $('#modulnum').val(),
+            moduleprise: $('#moduleprise').val()==undefined ? "" : $('#moduleprise').val(),
+
+
+            payment_date: $('#payment_date').val()==undefined ? "" : $('#payment_date').val(),
+            term_options: $('#term_options').val()==undefined ? "" : $('#term_options').val()
         }, updateContrac);
     });
 
