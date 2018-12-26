@@ -38,7 +38,10 @@ $(function () {
             itogo: moneyFormat($('#moduleprise').val()*$('#modulnum').val()+$('#mainprise').val()*$('#mainnum').val()),
 
             payment_date: $('#payment_date').val()==undefined ? "" : $('#payment_date').val(),
-            term_options: $('#term_options').val()==undefined ? "" : $('#term_options').val()
+            term_options: $('#term_options').val()==undefined ? "" : $('#term_options').val(),
+            genitive_namehead: "",
+            genitive_position_manager: ""
+            
         }, updateContrac);
     });
 
@@ -80,11 +83,14 @@ $(function () {
             itogo: moneyFormat($('#moduleprise').val()*$('#modulnum').val()+$('#mainprise').val()*$('#mainnum').val()),
             
             payment_date: $('#payment_date').val()==undefined ? "" : $('#payment_date').val(),
-            term_options: $('#term_options').val()==undefined ? "" : $('#term_options').val()
+            term_options: $('#term_options').val()==undefined ? "" : $('#term_options').val(),
+            genitive_namehead: "",
+            genitive_position_manager: ""
         }, updateContrac);
     });
 
     function updateContrac(data) {
+        console.log(data);
         $('#contract').html(data)
     }
 
